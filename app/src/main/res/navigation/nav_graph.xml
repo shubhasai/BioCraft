@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.shubhasai.biocraft.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/resumeFragment"
+        android:name="com.shubhasai.biocraft.ResumeFragment"
+        android:label="fragment_resume"
+        tools:layout="@layout/fragment_resume" >
+        <action
+            android:id="@+id/action_resumeFragment_to_creativeninjaFragment"
+            app:destination="@id/creativeninjaFragment" />
+        <action
+            android:id="@+id/action_resumeFragment_to_devgeniusFragment"
+            app:destination="@id/devgeniusFragment" />
+        <action
+            android:id="@+id/action_resumeFragment_to_digitalproFragment"
+            app:destination="@id/digitalproFragment" />
+        <action
+            android:id="@+id/action_resumeFragment_to_marketmasterFragment"
+            app:destination="@id/marketmasterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.shubhasai.biocraft.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.shubhasai.biocraft.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/techproFragment"
+        android:name="com.shubhasai.biocraft.TechproFragment"
+        android:label="fragment_techpro"
+        tools:layout="@layout/fragment_techpro" />
+    <fragment
+        android:id="@+id/marketmasterFragment"
+        android:name="com.shubhasai.biocraft.MarketmasterFragment"
+        android:label="fragment_marketmaster"
+        tools:layout="@layout/fragment_marketmaster" />
+    <fragment
+        android:id="@+id/creativeninjaFragment"
+        android:name="com.shubhasai.biocraft.CreativeninjaFragment"
+        android:label="fragment_creativeninja"
+        tools:layout="@layout/fragment_creativeninja" />
+    <fragment
+        android:id="@+id/digitalproFragment"
+        android:name="com.shubhasai.biocraft.DigitalproFragment"
+        android:label="fragment_digitalpro"
+        tools:layout="@layout/fragment_digitalpro" />
+    <fragment
+        android:id="@+id/devgeniusFragment"
+        android:name="com.shubhasai.biocraft.DevgeniusFragment"
+        android:label="fragment_devgenius"
+        tools:layout="@layout/fragment_devgenius" />
+</navigation>

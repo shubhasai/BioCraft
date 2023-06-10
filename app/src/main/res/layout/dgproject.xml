@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="34dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_delete"
+            android:id="@+id/btn_deleteProject"
+            android:layout_gravity="end"
+            android:layout_height="34dp"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_project"
+            android:layout_gravity="center"
+            android:layout_height="60dp"/>
+        <TextView
+            android:layout_gravity="start"
+            android:textSize="22sp"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:text="Internation Institute of Information Tchnology, Bhubaneswar"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvNameofProject"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:text="Electronics and Communication Engineering"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvProjectDes"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:text="Btech"
+            android:autoLink="web"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvProjectLink"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:gravity="start"
+            android:text="Dec 2020 - July 2024"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvLearning"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

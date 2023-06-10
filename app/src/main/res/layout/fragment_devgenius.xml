@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DevgeniusFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/pdfpreview"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_generate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Resume Created. Share"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="DOWNLOAD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pdflayout"
+            android:layout_width="595pt"
+            android:layout_height="1000pt"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:visibility="visible"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvuserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/amiko"
+                    android:gravity="center"
+                    android:text="Shubhasai Mohapatra"
+                    android:textColor="@color/dgblue"
+                    android:textSize="42sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/baseline_email_24"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:autoLink="email"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="mshubhasai2002@gmail.com"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_phone"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="phone"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="7205074901"
+                        android:textColor="@color/dgblue"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_link"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="shubhasaimohapatra.in"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/github"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvgithub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="https://github/shubhasai"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_linkedin"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvlinkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="start"
+                        android:text="www.linkedin.com/in/shubhasai-mohapatra"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iconleetcode"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_leetcode"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvLeetcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="shubhasaimohapatra.in"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Education"
+                    android:textColor="@color/dgblue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/one1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/dgblue" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvEducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp" />
+
+                <TextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Skills"
+                    android:textColor="@color/dgblue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/two2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/dgblue" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/skillChipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Work Experience"
+                    android:textColor="@color/dgblue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/three3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/dgblue" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvWorkexp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp" />
+
+                <TextView
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Projects"
+                    android:textColor="@color/dgblue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/four4"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/dgblue" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp" />
+
+                <TextView
+                    android:id="@+id/five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Volunteering Experience"
+                    android:textColor="@color/dgblue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/five5"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/dgblue" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvactivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/six"
+                    android:text="Achievement"
+                    android:textColor="@color/dgblue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/six6"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/dgblue" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAcheivements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp" />
+
+                <TextView
+                    android:id="@+id/tvProfiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Profiles"
+                    android:textColor="@color/dgblue"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/dgblue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iconlink2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_link"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvlink2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:autoLink="web"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="mshubhasai2002@gmail.com"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/iconstackoverflow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_stackoverflow"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvstackoverflow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="7205074901"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/icondribble"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_dribble"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvdribble"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="shubhasaimohapatra.in"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:id="@+id/iconYoutube"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_youtube"
+                        app:tint="@color/dgblue" />
+
+                    <TextView
+                        android:id="@+id/tvyoutube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:fontFamily="@font/linden_hill"
+                        android:gravity="center"
+                        android:text="shubhasaimohapatra.in"
+                        android:textColorLink="@color/dgblue"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center|bottom"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/darkblue"
+                android:text="Resume Created with BioCraft - By Shubhasai"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

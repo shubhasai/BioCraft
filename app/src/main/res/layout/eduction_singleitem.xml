@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="2dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="34dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_delete"
+            android:id="@+id/btn_deleteedu"
+            android:layout_gravity="end"
+            android:layout_height="34dp"/>
+        <TextView
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Grade:7.23"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvGrade"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:src="@drawable/ic_education"
+            android:layout_gravity="center"
+            android:layout_height="60dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="Internation Institute of Information Tchnology, Bhubaneswar"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvInstituteName"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Btech"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvDegree"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Electronics and Communication Engineering"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvwork"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="Dec 2020 - July 2024"
+            android:layout_width="wrap_content"
+            android:id="@+id/tvDuration"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

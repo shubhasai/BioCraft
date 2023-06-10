@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#181819</color>
+    <color name="white">#f0f9ff</color>
+    <color name="darkblue">#040442</color>
+    <color name="skyblue">#66ccce</color>
+    <color name="dgblue">#116A7B</color>
+    <color name="dporange">#EB6440</color>
+    <color name="mmred">#820000</color>
+    <color name="techproolive">#497174</color>
+
+</resources>

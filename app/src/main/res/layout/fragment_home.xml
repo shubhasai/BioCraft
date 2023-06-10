@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+    <!-- First Text View -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        android:text="LinkedIn Message !"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- First Copy Text Button -->
+        <Button
+            android:layout_gravity="end|bottom"
+            android:id="@+id/bnt_copylinkedinmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy"/>
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/tvLinkedinmessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter text 1"/>
+        <!-- First Edit Text Button -->
+        <ImageView
+            android:id="@+id/editLinkedin"
+            android:layout_width="30dp"
+            android:layout_gravity="end"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_edit"
+            app:tint="?attr/colorPrimary" />
+    </LinearLayout>
+
+
+    <!-- Second Text View -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        android:text="Whatsapp Message !"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Second Copy Text Button -->
+        <Button
+            android:id="@+id/btn_WhatsappTextCopy"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_height="wrap_content"
+            android:text="Copy"/>
+        <TextView
+            android:id="@+id/tvWhatsApp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Enter text 2"/>
+
+        <!-- Second Edit Text Button -->
+        <ImageView
+            android:id="@+id/editWhatapp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_edit"
+            app:tint="?attr/colorPrimary" />
+    </LinearLayout>
+
+</LinearLayout>
